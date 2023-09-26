@@ -37,11 +37,14 @@ main{
     gap: 2vw;
 
     color: aliceblue;
-    & p{font-weight: 100;font-size: 1.5rem;}
-    & #logo{
+    
+   
+}
+ p{font-weight: 100;font-size: 1.5rem;}
+     #logo{
         width: 50%;
     }
-    & a{
+    a{
         background-color: #46fe2a;
         padding: 2%;
         display: flex;
@@ -52,24 +55,22 @@ main{
         border-radius: 5px;
         text-decoration: none;
         transition: 0.2s;
-        & h4{
+        a h4{
             font-size: 2rem;
             color: #000000bd;
         }
-        & img{
+        a img{
             width: 10%;
             height: auto;
         }
-        &:hover{
+        a:hover{
             background-color: transparent;
             transform: scale(0.95);
         }
     }
-    & iframe{
+     iframe{
         width: 100%;
         background-color: #000000bd;
         border-radius: 10px;
         min-height: 90vh;
     }
-   
-}
