@@ -7,29 +7,39 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     max-width: 100vw;
-    background-color: #000000;
+    background-color: #000000e1;
+    background-image: url("../iconos/final.png");
+    background-size: 20%;
+    background-blend-mode: multiply;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
-    padding: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 main{
     width: min(500px,100%);
     padding:2vw;
-    min-height: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: relative;
-    gap: 5%;
-    & img{
-        width: 100%;
-        height: 85vh;
-        user-select: none;
-        object-fit: contain;
+    
+    border-radius: 0.5vw;
+    gap: 2vw;
+
+    color: aliceblue;
+    & p{font-weight: 100;font-size: 1.5rem;}
+    & #logo{
+        width: 50%;
     }
     & a{
         background-color: #46fe2a;
@@ -38,9 +48,10 @@ main{
         align-items: center;
         justify-content: center;
         gap: 5%;
-        border: 0.4vw solid #000000bd;
+        border: 0.4vw solid #0000003f;
         border-radius: 5px;
         text-decoration: none;
+        transition: 0.2s;
         & h4{
             font-size: 2rem;
             color: #000000bd;
@@ -49,10 +60,14 @@ main{
             width: 10%;
             height: auto;
         }
+        &:hover{
+            background-color: transparent;
+            transform: scale(0.95);
+        }
     }
     & iframe{
         width: 100%;
-        background-color: #46fe2a;
+        background-color: #000000bd;
         border-radius: 10px;
         min-height: 90vh;
     }
