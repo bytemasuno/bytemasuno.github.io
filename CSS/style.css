@@ -41,9 +41,10 @@ main{
    
 }
  p{font-weight: 100;font-size: 1.5rem;}
-     #logo{
-        width: 50%;
-    }
+#logo{
+        max-width: 50%;
+    height:auto;
+}
     a{
         background-color: #46fe2a;
         padding: 2%;
@@ -54,13 +55,14 @@ main{
         border: 0.4vw solid #0000003f;
         border-radius: 5px;
         text-decoration: none;
-        transition: 0.2s;}
+        transition: 0.2s;
+    }
         a h4{
             font-size: 2rem;
             color: #000000bd;
         }
         a img{
-            width: 10%;
+            max-width: 10%;
             height: auto;
         }
         a:hover{
